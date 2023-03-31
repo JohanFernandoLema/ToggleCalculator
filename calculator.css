@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background: lightseagreen;
+}
+
+.calculator form input[type="button"]{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.calculator form div input[type="number"]{
+    width: 95%;
+    text-align: end;
+    border: 0;
+    outline: 0;
+    width: 95%;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+#equal{
+    width: 146px;
+}
