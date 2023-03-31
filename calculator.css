@@ -51,3 +51,37 @@
 #equal{
     width: 146px;
 }
+
+/* Toogle button */
+.toogleBtn{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    background: #222;
+    transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(0,0,0,0.1), 
+                inset 0 8px 8px rgba(0,0,0,0.1),
+                inset 0 -4px 4px rgba(0,0,0,0.1);
+}
+
+.toogleBtn .indicator{
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 17px;
+    height: 17px;
+    background: linear-gradient(to bottom, #444, #222);
+    transform: scale(0.9);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255,255,255, 0.2),
+                inset 0 -4px 4px rgba(255,255,255, 0.2);
+    transition: 0.5s;
+}
+
+.toogleBtn .active .indicator{
+    left: 60px;
+}
