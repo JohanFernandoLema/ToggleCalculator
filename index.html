@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="calculator.css">
     <title>Document</title>
 </head>
+<header>
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 <body>
     <div class="container">
         
-        <div class="calculator">
+        <div class="calculator" id="calculator">
             <div id="toggle">
                 <i class="indicator"></i>
             </div>
@@ -45,7 +57,7 @@
                 <div>
                     <input type="button" value="00" onclick="display.value +='00' ">
                     <input type="button" value="0" onclick="display.value +='0' ">
-                    <input type="button" value="=" onclick="display.value = eval(display.value)"  id="equal">
+                    <input type="button" value="=" id="displayBtn" onclick="checkingForInput()">
                 </div>
             </form>
         </div>
